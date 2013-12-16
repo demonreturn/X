@@ -33,6 +33,15 @@
     <ClInclude Include="ExOSLockWindows.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="EXOSFile.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\EXTypeDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\include\EXUtilityDefine.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -48,6 +57,9 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="ExOSLockWindows.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="EXOSFile.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>

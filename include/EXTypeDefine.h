@@ -38,3 +38,12 @@ typedef	INT64						TIME64_MS;		// 以毫秒为单位
 
 // 返回值类型定义
 typedef long						EXResult;
+
+
+// 平台差异类型定义
+typedef struct tag_fileAttributes
+{
+	LONGLONG					llFileSize;
+	TIME64_MS					llCreateTime;
+	TIME64_MS					llModifyTime;
+} FileAttribute;

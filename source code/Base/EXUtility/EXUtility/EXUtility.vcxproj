@@ -41,6 +41,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <OutDir>../../../../out/$(Configuration)/</OutDir>
+    <IntDir>../../../../Temp/$(Configuration)/</IntDir>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -52,6 +54,7 @@
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;EXUTILITY_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>../../../../include/;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -79,6 +82,9 @@
     <Text Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\include\EXTypeDefine.h" />
+    <ClInclude Include="..\..\..\..\include\EXUtilityDefine.h" />
+    <ClInclude Include="EXOSFile.h" />
     <ClInclude Include="ExOSLock.h" />
     <ClInclude Include="ExOSLockWindows.h" />
     <ClInclude Include="EXUtility.h" />
@@ -94,6 +100,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
       </PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="EXOSFile.cpp" />
     <ClCompile Include="ExOSLock.cpp" />
     <ClCompile Include="ExOSLockWindows.cpp" />
     <ClCompile Include="EXUtility.cpp" />
