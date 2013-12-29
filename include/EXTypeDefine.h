@@ -23,7 +23,6 @@ typedef float						FLOAT;
 typedef double						DOUBLE;
 typedef __int32						BOOL;
 typedef char						CHAR;
-typedef char						TCHAR;
 typedef unsigned char				BYTE;
 
 // 常用字符串类型定义
